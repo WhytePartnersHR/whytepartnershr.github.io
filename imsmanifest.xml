@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="no" ?>
+<manifest identifier="ca.accessforward.general.2017" version="1" 
+          xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+          xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3"
+          xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3"
+          xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                              http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+                              http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+                              http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
+                              http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+	<metadata>
+		<schema>ADL SCORM</schema>
+		<schemaversion>2004 4th Edition</schemaversion>
+	</metadata>
+	<organizations default="accessforward_ca">
+		<organization identifier="accessforward_ca" adlseq:objectivesGlobalToSystem="false">
+			<title>AccessForward - General Requirements</title>
+<item identifier="index" identifierref="index_resource" isvisible="true">
+  <title>AccessForward - General Requirements</title>
+  <imsss:sequencing IDRef="common_seq_rules"></imsss:sequencing>
+</item>
+		</organization>
+ 	</organizations>
+	<resources>
+<resource identifier="index_resource" type="webcontent" adlcp:scormType="sco" href="index.html"></resource>
+		<resource identifier="common_files" type="webcontent" adlcp:scormType="asset">
+		</resource>
+ 	</resources>
+        <imsss:sequencingCollection>
+                <imsss:sequencing ID="common_seq_rules">
+                        <imsss:deliveryControls completionSetByContent="true" objectiveSetByContent="true"/>
+                        <adlseq:rollupConsiderations requiredForCompleted="ifAttempted" requiredForSatisified="ifAttempted" />
+                </imsss:sequencing>
+                <imsss:sequencing ID="finish_seq_rules">
+                        <imsss:sequencingRules>
+                                <imsss:postConditionRule>
+                                        <imsss:ruleConditions>
+                                                <imsss:ruleCondition condition="always"/>
+                                        </imsss:ruleConditions>
+                                        <imsss:ruleAction action="exitParent"/>
+                                </imsss:postConditionRule>
+                        </imsss:sequencingRules>
+                        <imsss:deliveryControls completionSetByContent="true" objectiveSetByContent="true"/>
+                </imsss:sequencing>
+        </imsss:sequencingCollection>
+</manifest>

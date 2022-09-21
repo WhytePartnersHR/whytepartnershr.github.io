@@ -1,0 +1,341 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!--
+-->
+<title>AccessForward - General Requirements - Summary</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/jasny-bootstrap.min.css">
+     <script src="js/jquery.min.js"></script> 
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/jasny-bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+<!-- fonts -->
+<link href='fonts/google.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/newado.css">
+		<link rel="stylesheet" href="css/module.css">
+		<link rel="stylesheet" href="css/share.css">
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jaaulde-cookies.js"></script>
+	<script type="text/javascript" src="js/ado.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+	<script type="text/javascript" src="js/glossary-new.js"></script>
+	<script type="text/javascript" src="js/clickToReveal.js"></script>
+	<script type="text/javascript" src="js/qst-mult.js"></script>
+	<script type="text/javascript" src="js/readScreen.js"></script>
+	 <script type="text/javascript" src="js/lib/jquery.hotkeys.js"></script>
+	
+	<script type="text/javascript" src="js/lib/jQuery.jPlayer.2.0.0/jquery.jplayer.js"></script>
+	  <script type="text/javascript" src="js/player/jquery.accessibilityplayer.js"></script>
+	  <script type="text/javascript" src="js/player/util.js"></script>
+	  <script type="text/javascript" src="js/player/plugins/audio_descriptors.js"></script>
+	  <script type="text/javascript" src="js/player/plugins/captions.js"></script>
+	  <script type="text/javascript" src="js/player/plugins/fullscreen.js"></script>
+	  <script type="text/javascript" src="js/player/plugins/keyboard_shortcuts.js"></script>
+<script type="text/javascript">
+$(window).load(
+                function() {
+                        $('.accordion').accordion( { active: false, autoHeight: false, collapsible: true } );
+                }
+        );
+</script>
+
+
+</head>
+<body>
+<a class="ablty" href="summary.html#start">Skip to Content</a>
+    <nav class="navbar navbar-adogrey navbar-fixed-top" style="z-index: 900000">
+      <div class="container-fluid">
+	<div class="container">
+	<div class="navbar-top row">
+	  <div class="pull-right col-mb-2">
+  <div class="pull-right" style="height: 80px;">&nbsp;</div>
+	      <ul class="dropdown-menu">
+		<li class="arrow">&nbsp;</li>
+		<li class="SearchBox"><div class="input-group">
+  <label id="search-desc" for="searchQuery" class="ablty">Search Box</label>
+  <input type="text" class="form-control" name="q" placeholder="Search Details Here" id="searchQuery" />
+  <span class="input-group-addon" id="searchBtn">Search</span>
+</div></li>
+	      </ul>
+		  <script>
+			  $(function() {
+				  $('#searchBtn').click(function() {
+					  var q = $('#searchQuery').val();
+					  window.location = '/search?q='+encodeURI(q);
+				  });
+				  $('#searchQuery').keypress(function(event) {
+					  var keycode = (event.keyCode ? event.keyCode : event.which);
+					  if (keycode == 13) {
+						  $('#searchBtn').trigger('click');
+					  }
+				  });
+			  });
+		  </script>
+	    <div class="font-resize">
+	      <a href="summary.html#" class="smallFont" title="Decrease Font, Select to decrease font size">-A<span class="ablty">Decrease Font, Select to decrease font size</span></a>
+	      <a href="summary.html#" class="medFont" title="Default font size, Select to restore to default font size">A<span class="ablty">Default font size, Select to restore to default font size</span></a>
+	      <a href="summary.html#" class="largeFont" title="Increase Font, Select to increase font size">A<sup>+</sup><span class="ablty">Increase Font, Select to increase font size</span></a>
+	    </div>
+	  </div>
+	  <div class="col-mb-1">
+	  </div>
+	</div>
+	</div>
+      </div>
+    </nav>
+<a id="start"></a>
+      <nav class="navbar topMenu modPageTop moduleTop mod-color">
+      <div class="container">
+	<div class="row">
+	<div class="pull-right">
+      <div class="screenReader">
+	<div class="sr-header">Listen</div>
+				<div id="jPlayerForReader">&nbsp;</div>
+					<a href="summary.html#" id="backwardsListener"><div id="backwardsButton"><i class="fa fa-backward"></i>
+<span class="ablty">Back</span></div></a><a href="newaudio/general-requirements/summary.mp3" id="playListener"><div id="playButton"><i class="fa fa-play-circle-o"></i><span class="ablty">Play</span></div></a><a href="summary.html#" id="pauseListener"><div id="pauseButton"><i class="fa fa-pause"></i><span class="ablty">Pause</span></div></a><a style="display: none" href="summary.html#" id="stopListener"><div id="stopButton"><span class="ablty">Stop</span></div></a><a href="summary.html#" id="forwardListener"><div id="forwardsButton"><i class="fa fa-forward"></i><span class="ablty">Forward</span></div></a>
+<br /><span id="currentTime"> </span>
+<span class="progressBar" title="Audio progress bar"><span id="RMProgress" class="progress"></span><span class="ablty">Audio progress bar</span></span>
+<span id="duration"></span><a href="summary.html#" id="muteListener"><div id="muteButton"><i class="fa fa-volume-up"></i><span class="ablty">Mute</span></div></a><a href="summary.html#" id="unmuteListener"><div id="unmuteButton"><i class="fa fa-volume-off"></i><span class="ablty">Unmute</span></div></a>
+	</div>
+<span style="font-size: .6em">Audio narration. Select the play button (link) to listen.</span>
+	</div>
+        <div class="navbar-header">
+          <div class="moduleHeader">
+	  	General Requirements  
+  	  </div>
+        </div>
+</div>
+      </div>
+    </nav>
+
+<div class="container modPage">
+  <div class="row">
+    <div class="navbar navbar-default hidden-md hidden-lg mod-color">
+	<button type="button" class="navbar-toggle-module navbar-toggle" data-toggle="offcanvas" data-target=".navmenu-left">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="col-md-3 offcanvas-sm navmenu-left">
+	<div class="leftMenu">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="summary.html#topics" aria-controls="topics" role="tab" data-toggle="tab"><i class="fa fa-list-ul"></i><br />Topics</a><div class="arrow">&nbsp;</div></li>
+    <li role="presentation"><a href="summary.html#classification" aria-controls="classification" role="tab" data-toggle="tab"><i class="fa fa-users"></i><br />Classification</a><div class="arrow">&nbsp;</div></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="topics">
+      <ol>
+	<li title="Section 1: Introduction. Tab through to explore the different topics in this section."><span class="title">Introduction</span><span class="ablty">Tab through to explore the different topics in this section.</span>
+	  <ul>
+	    <li><a href="intro.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Introduction Video</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="intro-topics.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Module Topics</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="who-must-comply.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Who Has to Comply?</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="about.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">About the General Requirements</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	  </ul>
+	</li>
+	<li title="Section 2: The Requirements. Tab through to explore the different topics in this section."><span class="title">The Requirements</span><span class="ablty">Tab through to explore the different topics in this section.</span>
+	  <ul>
+	    <li><a href="training-requirement.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">The Training Requirement</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="accessibility-policies.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Accessibility Policies</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="accessibility-plans.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Accessibility Plans</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="barriers-to-accessibility.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Barriers to Accessibility</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="whats-difference.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">What's the Difference</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="knowledge-check.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Knowledge Check</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="procurement.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Procurement</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="self-service-kiosks.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Self-Service Kiosks</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="knowledge-check-2.html" class="scorm  done "><i class="fa fa-check-circle"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Knowledge Check&nbsp;</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	    <li><a href="summary.html#" class="scorm  active "><i class="fa fa-adjust"></i><span class="whiteMiddle">&nbsp;</span> <span><span class="subtitle">Summary</span></span> <span class="ablty">Select to learn more.</span></a></li>
+	  </ul>
+	</li>
+      </ol>
+</div>
+    <div role="tabpanel" class="tab-pane" id="classification">
+      <ol class="noNum">
+	<li><div class="occ-header">Organizational Classification Chart</div>
+	  <p class="push">The 5 classes of organizations:</p>
+	  <ul>
+	    <li>
+	      <div class="occ-header2"><a role="button" data-toggle="collapse" href="summary.html#gov" aria-expanded="false" aria-controls="gov" class="collapseBtn collapsed">Government of Ontario and the Legislative Assembly</a></div>
+<div class="collapse" id="gov">
+<p>Includes every ministry of the Government of Ontario, the Office of the Premier, and the Legislative Assembly including constituency offices of the members of the Assembly.</p>
+</div>
+	    </li>
+	    <li>
+	      <div class="occ-header2"><a role="button" data-toggle="collapse" href="summary.html#ldpso" aria-expanded="false" aria-controls="ldpso" class="collapseBtn collapsed">Large designated public sector organization</a></div>
+<div class="collapse" id="ldpso">
+<p>A 
+<strong>designated public sector organization</strong><sup>*</sup>
+with 50 or more 
+employees
+(
+such as municipalities, hospitals, 
+universities, 
+colleges of applied arts and technology, district 
+school boards
+,
+and 
+organizations that provide 
+public transportation
+)
+</p>
+</div>
+	    </li>
+	    <li>
+	      <div class="occ-header2"><a role="button" data-toggle="collapse" href="summary.html#sdpso" aria-expanded="false" aria-controls="sdpso" class="collapseBtn collapsed">Small designated public sector organization</a></div>
+<div class="collapse" id="sdpso">
+<p>A 
+<strong>designated public sector organization</strong><sup>*</sup>
+with one 
+to 49 
+employees 
+(
+such as the Ontario Office of the Fairness 
+Commissioner
+and some
+municipalities
+)
+. </p>
+</div>
+	    </li>
+	    <li>
+	      <div class="occ-header2"><a role="button" data-toggle="collapse" href="summary.html#largeOrg" aria-expanded="false" aria-controls="largeOrg" class="collapseBtn collapsed">Large organization</a></div>
+<div class="collapse" id="largeOrg">
+<p>A
+private or not
+-
+for
+-
+profit organization that provides goods, 
+services or facilities to the public or to other organizations and 
+has 50 or more employees in Ontario. It does not include the 
+Government of Ontario, Legislative Assembly, or designated 
+public sector organizations
+.</p>
+</div>
+	    </li>
+	    <li>
+	      <div class="occ-header2"><a role="button" data-toggle="collapse" href="summary.html#smallOrg" aria-expanded="false" aria-controls="smallOrg" class="collapseBtn collapsed">Small organization</a></div>
+<div class="collapse" id="smallOrg">
+<p>A
+private or not
+-
+for
+-
+profit organization that provides goods, 
+services or facilities to the public or to other organizations and 
+has one to 49 employees in Ontario. It does not include the 
+Government of Ontario, Legislative Assembly, or designated 
+public sector organizations
+.</p>
+</div>
+	    </li>
+	  </ul>
+	</li>
+      </ol>
+<p><sup>*</sup> <strong>Designated public sector organization</strong>
+Refers to organizations listed in Schedule 1 (Broader Public Sector) of the 
+Integrated Accessibility Standards Regulation. These organizations include 
+hospitals, universities, colleges of applied arts and technology, district school boards, and organizations that provide public transportation. </p>
+<p>Designated public sector also means every municipality and every person or 
+organization listed in Column 1 of Table 1 of Ontario Regulation 146/10, of 
+the Public Service of Ontario Act, 2006</p>
+    </div>
+  </div>
+
+</div>
+    </div>
+    <div class="col-md-9 innerPage"><section>
+	<h1>Summary</h1>
+	<p>You have now completed the General Requirements module.</p>
+<h2>Module Topics</h2>
+	<ul class="ado-progress fa-ul">
+		<li class="checked"><i class="fa fa-li fa-check-square-o"></i>Who Has to Comply with the Regulation</li>
+		<li class="checked"><i class="fa fa-li fa-check-square-o"></i>About the General Requirements</li>
+		<li class="checked"><i class="fa fa-li fa-check-square-o"></i>The Training Requirement </li>
+		<li class="checked"><i class="fa fa-li fa-check-square-o"></i>Accessibility Policies </li>
+		<li class="checked"><i class="fa fa-li fa-check-square-o"></i>Accessibility Plans
+			<ul class="wDots">
+				<li class="checked">Barriers to Accessibility</li>
+			</ul>
+		</li>
+		<li class="checked"><i class="fa fa-li fa-check-square-o"></i>What’s the Difference?</li>
+		<li class="checked"><i class="fa fa-li fa-check-square-o"></i>Procurement</li>
+		<li class="checked"><i class="fa fa-li fa-check-square-o"></i>Self-Service Kiosks	</li>
+	</ul>
+<p>If you are required to provide confirmation of your training covered in this module, a sample completion certificate which you can sign and date is provided on the AccessForward.ca website.</p>
+<p>AccessForward cannot certify completion. It is the responsibility of the individual to certify that they have completed the module content.</p>
+	
+	    <div><i class="fa fa-certificate"></i> <a href="resources/Sample%20Certificate%20of%20Training%20(Appendix%20G).pdf">Certificate</a></div>	<div class="prevNext">
+			<a href="knowledge-check-2.html" class="scorm prev"><i class="fa fa-chevron-left"></i> Previous Screen</a>	<a href="summary.html#" class="scormFinish next">Complete Course</a>	</div>
+	<div id="glossaryDetail">
+	 <div class="arrow"></div>
+	 <div id="glossaryInner">
+                                        <div id="glossaryTerm">&nbsp;</div>
+                                        <div id="definition">&nbsp;</div>
+                                        <div id="glossaryExitBox">
+                                                <a id="glossaryExit" href="summary.html#">Close <i class="fa fa-times-circle-o"></i></a>
+                                        </div>
+                                </div>		
+	</div>
+    </section></div>
+  </div>
+</div>
+ 
+    <div class="footer">
+<h2 class="ablty">Footer</h2>
+    <div class="container">
+      <div class="row">
+	<div class="col-md-8">
+	  <p>Developed by Learnography (formerly known as Curriculum Services Canada) with support from the Government of Ontario.</p>
+	  <div style="margin-top: 40px;">
+	    <a href="http://ontario.ca/accessibility"><img src="images/ontario.png" alt="Government of Ontario" /></a>
+	    <a class="pull-right" href="http://learnography.ca"><img src="images/learnography-logo.png" alt="Curriculum Services Canada / Service des programmes d'&eacute;tudes Canada" /></a>
+	  </div>
+	</div>
+	<div class="col-md-4">
+	  <h3>More Information</h3>
+	  <div class="socIcons">
+<!-- 	  <a href="http://www.facebook.com/AccessON"><i class="fa fa-facebook"></i></a> -->
+	  <a href="http://www.twitter.com/AccessForward"><i class="fa fa-twitter"></i><div class="ablty">Twitter</div></a>
+	  <a href="summary.html#insertEmailHere"><i class="fa fa-envelope"></i><div class="ablty">Email</div></a>
+	  </div>
+	  <div style="margin-top: 40px;">
+	    <a class="btn btn-clear" href="resources/Disclaimer.pdf">Read our disclaimer</a>
+	    <a class="btn btn-clear" href="https://get.adobe.com/reader/">Get Acrobat Reader</a>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scormfunctions.js" type="text/javascript"></script>
+<script type="text/javascript">
+  takeOverLinks();completedSCOPage();
+</script>
+
+</body>
+</html>

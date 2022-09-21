@@ -1,0 +1,330 @@
+.share-panel-services {
+	clear:both
+}
+.share-panel-services.watch-top-level {
+	float:right
+}
+.share-panel-services.watch-top-level .share-service-icon {
+	-moz-transform:scale(0.45);
+	-ms-transform:scale(0.45);
+	-webkit-transform:scale(0.45);
+	transform:scale(0.45)
+}
+.share-panel-services.watch-top-level .share-group li {
+	margin-right:0
+}
+.share-panel-services .share-service-button {
+	background:none;
+	border:none;
+	cursor:pointer;
+	text-align:left
+}
+.clicked-service-button {
+	position:relative
+}
+.clicked-service-button .share-service-icon {
+	opacity:.3
+}
+.share-service-checkmark {
+	display:none;
+	position:absolute;
+	top:0
+}
+.clicked-service-button .share-service-checkmark {
+	display:inline-block;
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -492px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-group {
+	float:left
+}
+.share-group li {
+	float:left;
+	margin-right:5px
+}
+@media screen and (max-width:656px) {
+	.share-group li {
+		margin-right:0
+	}
+}
+.share-panel-show-more {
+	color:#333;
+	display:block;
+	line-height:2em;
+	margin-left:0
+}
+.share-service-icon {
+	vertical-align:middle;
+	margin:-1px
+}
+.share-service-icon-ameba {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -897px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-bebo {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1313px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-blogger {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1349px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-cyworld {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -420px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-delicious {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -384px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-digg {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -753px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-facebook {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -861px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-fotka {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1457px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-goo {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1077px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-googleplus {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -276px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-grono {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -36px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-hi5 {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -108px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-hyves {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -717px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-linkedin {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -621px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-livejournal {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1113px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-kakao {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -72px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-mail {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -144px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-meneame {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -456px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-mixi {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -789px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-mixx {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -312px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-myspace {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -933px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-naver {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1277px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-nujij {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -204px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-odnoklassniki {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 0;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-pinterest {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -825px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-rakuten {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -657px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-reddit {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -969px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-skyblog {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -240px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-sledzik {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1493px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-stumbleupon {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -564px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-tuenti {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1149px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-tumblr {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1421px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-twitter {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -348px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-vkontakte {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1241px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-webryblog {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -528px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-weibo {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1205px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-wykop {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1005px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-yahoo {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1041px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+.share-service-icon-yigg {
+	background:no-repeat url(http://s.ytimg.com/yts/imgbin/www-sharing-vfl72fnxf.png) 0 -1385px;
+	background-size:auto;
+	width:32px;
+	height:32px
+}
+#share-email .share-email {
+	margin-top:50px
+}
+.share-embed-code {
+	box-sizing:border-box;
+	width:100%
+}
+.share-panel-embed-container hr {
+	border-color:#ccc;
+	border-style:solid;
+	margin:1em 0
+}
+.share-embed-options {
+	margin-top:10px
+}
+.share-group {
+list-style: outside none none;
+margin-left: 0;
+padding:0;
+}
+.share-group li {
+	padding-right: 0;
+	margin-righT: 0;
+}
+.yt-sprite {
+	display:inline-block
+}
+.share-panel-url {
+	width: 75%;
+}
+.share-panel-services-container {
+	margin-top: 40px;
+	border-top: solid 1px #1B242E;
+	padding-top: 20px;
+}
